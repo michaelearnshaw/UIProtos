@@ -1,0 +1,51 @@
+﻿<UserControl xmlns:igWPF="http://schemas.infragistics.com/xaml/wpf"  x:Class="Laminar.UI.IGTest.IGCollectionView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Laminar.UI.IGTest"
+             xmlns:contractViews="clr-namespace:Laminar.UI.ContractViews"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
+        <contractViews:ContractCollectionViewModel/>
+    </UserControl.DataContext>
+    <UserControl.Resources>
+<!--            <local:DoubleToColorConverter x:Key="doubleToColorConverter"/>-->
+            <local:QuantityToColorConverter x:Key="quantityToColorConverter"/>
+
+<!--            <Style TargetType="{x:Type igWPF:CellValuePresenter}" x:Key="LongShortFieldStyle">-->
+<!--                <Setter Property="Foreground" Value="{Binding Path=Value, RelativeSource={RelativeSource Self}, Converter={StaticResource doubleToColorConverter}}"/>-->
+<!--                <Setter Property="FontWeight" Value="Bold"/>-->
+<!--                <Setter Property="FontSize" Value="14"/>-->
+<!--            </Style>-->
+            <Style TargetType="{x:Type igWPF:DataRecordPresenter}">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <SolidColorBrush Color="{Binding Path=Data, Converter={StaticResource quantityToColorConverter}}" Opacity="0.3"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+        </UserControl.Resources>
+    <Grid>
+        <igWPF:XamDataGrid  DataSource="{Binding Entities}" Theme="Onyx">
+            <igWPF:XamDataGrid.FieldLayouts>
+                <igWPF:FieldLayout>
+                    <igWPF:Field Name="ClientId">
+<!--                        <igWPF:Field.Settings>-->
+<!--                            <igWPF:FieldSettings  CellValuePresenterStyle="{StaticResource BlueId}"/>-->
+<!--                        </igWPF:Field.Settings>-->
+                    </igWPF:Field>
+                    <igWPF:Field Name="ClientCode"/>
+                    <igWPF:Field Name="ClientName">
+<!--                        <igWPF:Field.Settings>-->
+<!--                            <igWPF:FieldSettings LabelPresenterStyle="{StaticResourceExtension BlueHId}" -->
+<!--                                                  CellValuePresenterStyle="{StaticResource BlueId}"/>-->
+<!--                        </igWPF:Field.Settings>-->
+                    </igWPF:Field>
+                </igWPF:FieldLayout>
+            </igWPF:XamDataGrid.FieldLayouts>
+            </igWPF:XamDataGrid>
+    </Grid>
+</UserControl>
