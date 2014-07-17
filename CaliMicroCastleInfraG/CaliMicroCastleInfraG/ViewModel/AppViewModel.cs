@@ -7,7 +7,7 @@ using Caliburn.Micro;
 
 namespace CaliMicroCastleInfraG.ViewModel
 {
-    class AppViewModel : PropertyChangedBase
+    class AppViewModel : PropertyChangedBase,IApp
     {
     }
 }

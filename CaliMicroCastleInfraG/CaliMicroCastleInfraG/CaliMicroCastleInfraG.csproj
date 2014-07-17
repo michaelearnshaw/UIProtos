@@ -72,9 +72,10 @@
     <Compile Include="IShell.cs" />
     <Compile Include="ShellViewModel.cs" />
     <Compile Include="ViewModel\AppViewModel.cs" />
-    <Compile Include="View\AppView.xaml.cs">
+    <Compile Include="ViewModel\AppView.xaml.cs">
       <DependentUpon>AppView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\IApp.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -91,7 +92,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\AppView.xaml">
+    <Page Include="ViewModel\AppView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -126,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
+    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

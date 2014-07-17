@@ -1,3 +1,5 @@
+using CaliMicroCastleInfraG.ViewModel;
+
 namespace CaliMicroCastleInfraG {
     using System;
     using System.Collections.Generic;
@@ -16,6 +18,7 @@ namespace CaliMicroCastleInfraG {
             container.Singleton<IWindowManager, WindowManager>();
             container.Singleton<IEventAggregator, EventAggregator>();
             container.PerRequest<IShell, ShellViewModel>();
+            container.PerRequest<IApp, AppViewModel>();
         }
 
         protected override object GetInstance(Type service, string key) {
@@ -35,7 +38,7 @@ namespace CaliMicroCastleInfraG {
         }
 
         protected override void OnStartup(object sender, System.Windows.StartupEventArgs e) {
-            DisplayRootViewFor<IShell>();
+            DisplayRootViewFor<IApp>();
         }
     }
 }
