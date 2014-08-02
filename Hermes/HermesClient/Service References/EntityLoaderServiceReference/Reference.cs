@@ -26,6 +26,30 @@ namespace HermesClient.EntityLoaderServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://HermesEntityLoaderLib/IEntityLoaderService/GetEmployees", ReplyAction="http://HermesEntityLoaderLib/IEntityLoaderService/GetEmployeesResponse")]
         System.Threading.Tasks.Task<HermesDataLib.Employee[]> GetEmployeesAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://HermesEntityLoaderLib/IEntityLoaderService/GetNEmployees", ReplyAction="http://HermesEntityLoaderLib/IEntityLoaderService/GetNEmployeesResponse")]
+        HermesDataLib.Employee[] GetNEmployees(int n);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://HermesEntityLoaderLib/IEntityLoaderService/GetNEmployees", ReplyAction="http://HermesEntityLoaderLib/IEntityLoaderService/GetNEmployeesResponse")]
+        System.Threading.Tasks.Task<HermesDataLib.Employee[]> GetNEmployeesAsync(int n);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://HermesEntityLoaderLib/IEntityLoaderService/GetOneTrade", ReplyAction="http://HermesEntityLoaderLib/IEntityLoaderService/GetOneTradeResponse")]
+        HermesDataLib.TradeVO GetOneTrade();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://HermesEntityLoaderLib/IEntityLoaderService/GetOneTrade", ReplyAction="http://HermesEntityLoaderLib/IEntityLoaderService/GetOneTradeResponse")]
+        System.Threading.Tasks.Task<HermesDataLib.TradeVO> GetOneTradeAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://HermesEntityLoaderLib/IEntityLoaderService/GetAllTrades", ReplyAction="http://HermesEntityLoaderLib/IEntityLoaderService/GetAllTradesResponse")]
+        HermesDataLib.TradeVO[] GetAllTrades();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://HermesEntityLoaderLib/IEntityLoaderService/GetAllTrades", ReplyAction="http://HermesEntityLoaderLib/IEntityLoaderService/GetAllTradesResponse")]
+        System.Threading.Tasks.Task<HermesDataLib.TradeVO[]> GetAllTradesAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://HermesEntityLoaderLib/IEntityLoaderService/GetNTrades", ReplyAction="http://HermesEntityLoaderLib/IEntityLoaderService/GetNTradesResponse")]
+        HermesDataLib.TradeVO[] GetNTrades(int n);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://HermesEntityLoaderLib/IEntityLoaderService/GetNTrades", ReplyAction="http://HermesEntityLoaderLib/IEntityLoaderService/GetNTradesResponse")]
+        System.Threading.Tasks.Task<HermesDataLib.TradeVO[]> GetNTradesAsync(int n);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -69,6 +93,38 @@ namespace HermesClient.EntityLoaderServiceReference {
         
         public System.Threading.Tasks.Task<HermesDataLib.Employee[]> GetEmployeesAsync() {
             return base.Channel.GetEmployeesAsync();
+        }
+        
+        public HermesDataLib.Employee[] GetNEmployees(int n) {
+            return base.Channel.GetNEmployees(n);
+        }
+        
+        public System.Threading.Tasks.Task<HermesDataLib.Employee[]> GetNEmployeesAsync(int n) {
+            return base.Channel.GetNEmployeesAsync(n);
+        }
+        
+        public HermesDataLib.TradeVO GetOneTrade() {
+            return base.Channel.GetOneTrade();
+        }
+        
+        public System.Threading.Tasks.Task<HermesDataLib.TradeVO> GetOneTradeAsync() {
+            return base.Channel.GetOneTradeAsync();
+        }
+        
+        public HermesDataLib.TradeVO[] GetAllTrades() {
+            return base.Channel.GetAllTrades();
+        }
+        
+        public System.Threading.Tasks.Task<HermesDataLib.TradeVO[]> GetAllTradesAsync() {
+            return base.Channel.GetAllTradesAsync();
+        }
+        
+        public HermesDataLib.TradeVO[] GetNTrades(int n) {
+            return base.Channel.GetNTrades(n);
+        }
+        
+        public System.Threading.Tasks.Task<HermesDataLib.TradeVO[]> GetNTradesAsync(int n) {
+            return base.Channel.GetNTradesAsync(n);
         }
     }
 }

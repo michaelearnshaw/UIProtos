@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="ezw63BkX3g4D7k7p8tgimm/ickU=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="HOmhdCGq0VIAv981oI7o7LVaiuw=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="netTcpBinding" name="NetTcpBinding_IEntityLoaderService">
       <properties>
@@ -118,10 +118,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="NetTcpBinding_IEntityLoaderService" contract="EntityLoaderServiceReference.IEntityLoaderService" bindingType="netTcpBinding" address="net.tcp://localhost:9000/HermesEntityLoader/service" bindingConfiguration="NetTcpBinding_IEntityLoaderService">
+    <endpoint name="NetTcpBinding_IEntityLoaderService" contract="EntityLoaderServiceReference.IEntityLoaderService" bindingType="netTcpBinding" address="net.tcp://localhost:9009/HermesEntityLoader/service" bindingConfiguration="NetTcpBinding_IEntityLoaderService">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>net.tcp://localhost:9000/HermesEntityLoader/service</serializedValue>
+          <serializedValue>net.tcp://localhost:9009/HermesEntityLoader/service</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

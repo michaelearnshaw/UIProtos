@@ -33,7 +33,7 @@ namespace HermesHost
 
                 // Step 5 Start the service.
                 selfHost.Open();
-                Console.WriteLine("The service is ready.");
+                Console.WriteLine("The CalculatorService service is ready. Hosted by HermesHost.Program");
                 Console.WriteLine("Press <ENTER> to terminate service.");
                 Console.WriteLine();
                 Console.ReadLine();

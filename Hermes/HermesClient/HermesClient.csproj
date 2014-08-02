@@ -58,6 +58,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\HermesDataLib.Employee.datasource" />
+    <None Include="Properties\DataSources\HermesDataLib.TradeVO.datasource" />
     <None Include="Service References\EntityLoaderServiceReference\EntityLoaderService.wsdl" />
     <None Include="Service References\EntityLoaderServiceReference\HermesEntityLoader.wsdl" />
     <None Include="Service References\EntityLoaderServiceReference\HermesEntityLoader.xsd">
