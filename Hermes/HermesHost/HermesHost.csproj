@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceModel" />
@@ -47,8 +50,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HermesDataLib\HermesDataLib.csproj">
+      <Project>{ab9459e6-18a8-4755-b837-10d517f07752}</Project>
+      <Name>HermesDataLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HermesLib\HermesLib.csproj">
       <Project>{5b66ad7d-9bf2-48b1-baf3-7ca1d5abae08}</Project>
       <Name>HermesLib</Name>

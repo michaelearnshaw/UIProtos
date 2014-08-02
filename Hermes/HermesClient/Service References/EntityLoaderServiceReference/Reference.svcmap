@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="50076e76-d985-4150-a68a-7fc9dddea656" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8000/HermesEntityLoader" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HermesEntityLoader.disco" MetadataType="Disco" ID="06e45fc5-ee43-431d-92a4-53adfdeb3575" SourceId="1" SourceUrl="http://localhost:8000/HermesEntityLoader?disco" />
+    <MetadataFile FileName="EntityLoaderService.wsdl" MetadataType="Wsdl" ID="59393539-cf7b-433d-b3be-bd2eb5784117" SourceId="1" SourceUrl="http://localhost:8000/HermesEntityLoader?wsdl" />
+    <MetadataFile FileName="HermesEntityLoader.xsd" MetadataType="Schema" ID="1600c9b0-332c-49c7-b62f-3c6dfc78c510" SourceId="1" SourceUrl="http://localhost:8000/HermesEntityLoader?xsd=xsd2" />
+    <MetadataFile FileName="HermesEntityLoader1.xsd" MetadataType="Schema" ID="1279190b-6a7b-42eb-918f-e762ceb8e70e" SourceId="1" SourceUrl="http://localhost:8000/HermesEntityLoader?xsd=xsd0" />
+    <MetadataFile FileName="HermesEntityLoader2.xsd" MetadataType="Schema" ID="d3554f47-d82f-4eba-8172-148147e0551c" SourceId="1" SourceUrl="http://localhost:8000/HermesEntityLoader?xsd=xsd1" />
+    <MetadataFile FileName="HermesEntityLoader.wsdl" MetadataType="Wsdl" ID="147fcd14-6bb7-4e96-856a-79a84b836f65" SourceId="1" SourceUrl="http://localhost:8000/HermesEntityLoader?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
